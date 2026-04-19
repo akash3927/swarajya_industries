@@ -1,0 +1,114 @@
+.aboutSection {
+  padding: 6rem 0;
+  background-color: var(--bg-card);
+}
+
+.aboutContainer {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.imageCol {
+  flex: 1;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 500px;
+  background-color: var(--bg-steel);
+  background-image: url('/about-bg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 20px 20px 0px rgba(221, 107, 32, 0.1);
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: var(--accent-orange);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.years {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.contentCol {
+  flex: 1;
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.iconBox {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(49, 130, 206, 0.1);
+  border: 1px solid var(--accent-blue);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.featureText h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.featureText p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .imageCol, .contentCol {
+    width: 100%;
+  }
+  .experienceBadge {
+    right: 20px;
+  }
+}

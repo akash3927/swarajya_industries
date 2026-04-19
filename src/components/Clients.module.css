@@ -1,0 +1,38 @@
+.clientsSection {
+  padding: 5rem 0;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.logoItem {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.logoItem:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 15px rgba(49, 130, 206, 0.2);
+}
